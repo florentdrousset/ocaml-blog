@@ -5,13 +5,9 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github florentdrousset/ocaml-blog))
 
-(authors "Author Name")
-
-(maintainers "Maintainer Name")
-
-(license LICENSE)
+(authors "Florent Drousset")
 
 (documentation https://url/to/documentation)
 
@@ -19,7 +15,7 @@
  (name ocaml_blog)
  (synopsis "A short synopsis")
  (description "A longer description")
- (depends ocaml dune)
+ (depends ocaml dune dream)
  (tags
   (topics "to describe" your project)))
 

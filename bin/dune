@@ -1,4 +1,4 @@
 (executable
  (public_name ocaml_blog)
  (name main)
- (libraries ocaml_blog))
+ (libraries dream ocaml_blog))
