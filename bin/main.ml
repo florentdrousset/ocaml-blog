@@ -1,3 +1,10 @@
 let () =
-  Dream.run (fun _ ->
-    Dream.html "Good morning, world!")
+  Dream.run 
+  @@ Dream.logger
+  @@ Dream.router [
+    Dream.get "/"
+      (fun request ->
+        Dream.log "Sending greeting to %s" (Dream.client request);
+        Dream.html "Hi";
+      );
+  ]
