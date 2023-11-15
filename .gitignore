@@ -1,1 +1,5 @@
+# ocamlbuild working directory
 _build/
+
+# opam switch
+_opam/
